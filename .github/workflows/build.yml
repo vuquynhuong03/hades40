@@ -38,17 +38,17 @@ jobs:
       - name: List modules (west list)
         run: west list
       - name: Build (west build)
-        run: west build -s zmk/app -b hannah60 -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Hannah60 DTS File
+        run: west build -s zmk/app -b hades40 -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Hades40 DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/hannah60.dts.pre.tmp
-      - name: Hannah60 .config
+        run: cat -n build/zephyr/hades40.dts.pre.tmp
+      - name: Hades40 .config
         if: ${{ always() }}
         run: cat -n build/zephyr/.config
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 hannah60.uf2
+        run: cp build/zephyr/zmk.uf2 hades40.uf2
       - name: Archive
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: hannah60.uf2
+          path: hades40.uf2
