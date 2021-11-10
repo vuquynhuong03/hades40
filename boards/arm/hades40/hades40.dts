@@ -7,6 +7,7 @@
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "arduino_pro_micro_pins.dtsi"
 
 / {
 	model = "Hades40_B";
@@ -82,12 +83,18 @@
 		};
 	};
 
+	ext-power {
+		compatible = "zmk,ext-power-generic";
+		label = "EXT_POWER";
+		control-gpios = <&gpio1 9 GPIO_ACTIVE_LOW>;
+	};
+
 	vbatt {
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
 		io-channels = <&adc 2>;
-		output-ohms = <1560000>;
-		full-ohms = <(1560000 + 806000)>;
+		output-ohms = <2000000>;
+		full-ohms = <(2000000 + 820000)>;
 	};
 };
 
@@ -136,12 +143,12 @@
 };
 
 &i2c0 {
-    compatible = "nordic,nrf-twi";
+	compatible = "nordic,nrf-twi";
 	status = "okay";
-    sda-pin = <15>;
-    scl-pin = <17>;
+	sda-pin = <15>;
+	scl-pin = <17>;
 
-	oled: ssd1306@3c {
+    oled: ssd1306@3c {
 		compatible = "solomon,ssd1306fb";
 		reg = <0x3c>;
 		label = "DISPLAY";
