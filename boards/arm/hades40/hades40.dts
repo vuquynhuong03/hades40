@@ -7,7 +7,6 @@
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "arduino_pro_micro_pins.dtsi"
 
 / {
 	model = "Hades40_B";
@@ -64,13 +63,13 @@
     encoder: encoder {
 		compatible = "alps,ec11";
 		label = "ENCODER";
-		a-gpios = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <2>;
+		a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		resolution = <4>;
 		status = "okay";
 	};
 
-	sensors {
+	sensors { 
 		compatible = "zmk,keymap-sensors";
 		sensors = <&encoder>;
 	};
@@ -116,6 +115,12 @@
 
 &usbd {
 	status = "okay";
+};
+
+&uart0 {
+	compatible = "nordic,nrf-uarte";
+	tx-pin = <6>;
+	rx-pin = <8>;
 };
 
 &spi1 {
