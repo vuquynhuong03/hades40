@@ -5,8 +5,8 @@
   "layer_names": ["base", "raise", "lower"],
   "layers": [
     [
-      ", &kp ESC",
-      ", &kp Q",
+      "&kp ESC",
+      "&kp Q",
       "&kp W",
       "&kp E",
       "&kp R",
@@ -115,7 +115,7 @@
       "&trans",
       "&trans",
       "&trans",
-      "&bootloader ",
+      "&bootloader",
       "&trans",
       "&trans",
       "&trans",
@@ -129,7 +129,7 @@
       "&trans",
       "&trans",
       "&trans",
-      "&bt BT_PRV ",
+      "&bt BT_PRV",
       "&trans",
       "&bt BT_NXT"
     ]
