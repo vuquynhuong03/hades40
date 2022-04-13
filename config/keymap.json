@@ -1,11 +1,11 @@
 {
-  "keyboard": "hades40",
-  "keymap": "default",
-  "layout": "LAYOUT",
+  "keyboard": "foo",
+  "keymap": "",
+  "layout": "",
   "layer_names": [
-    "base",
-    "raise",
-    "lower"
+    "default_layer",
+    "layer_raise",
+    "layer_lower"
   ],
   "layers": [
     [
