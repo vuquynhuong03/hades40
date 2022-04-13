@@ -1,18 +1,15 @@
-identifier: hades40
-name: Hades40
-type: keyboard
+identifier: hades40_v1
+name: Hades 40 Rev1 Board
+type: mcu
 arch: arm
 toolchain:
   - zephyr
   - gnuarmemb
   - xtools
-exposes:
-  - i2c_oled
 supported:
   - adc
   - usb_device
   - ble
+  - RGB
   - ieee802154
-  - pwm
   - watchdog
-  - WS2812B

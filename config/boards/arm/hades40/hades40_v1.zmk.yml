@@ -1,0 +1,13 @@
+file_format: "1"
+id: hades40_v1
+name: Hades 40 Rev1 Board
+type: board
+arch: arm
+features:
+  - keys
+  - display
+  - underglow
+outputs:
+  - usb
+  - ble
+url: none

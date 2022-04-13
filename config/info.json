@@ -14,7 +14,7 @@
         { "label": "O", "row": 0, "col": 9, "x": 9, "y": 0 },
         { "label": "P", "row": 0, "col": 10, "x": 10, "y": 0 },
         { "label": "BS", "row": 0, "col": 11, "x": 11, "y": 0 },
-        { "label": "VOL", "row": 1, "col": 11, "x": 12.25, "y": 0 },
+        { "label": "VOL", "row": 0, "col": 12, "x": 12.25, "y": 0 },
 
         { "label": "CAPS", "row": 1, "col": 0, "x": 0, "y": 1, "w": 1.25 },
         { "label": "A", "row": 1, "col": 1, "x": 1.25, "y": 1 },
