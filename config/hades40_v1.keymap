@@ -31,8 +31,8 @@
             bindings = <
       &kp GRAVE  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans            &trans            &trans          &kp MINUS      &kp EQUAL  &kp DELETE  &trans
    &kp CAPSLOCK  &kp N4  &kp N5  &kp N6  &trans  &trans  &trans            &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
- &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans  &kp SINGLE_QUOTE     &kp SEMICOLON          &kp SLASH         &trans
-         &trans  &kp N0                          &trans                                      &trans                            &trans      &trans
+ &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans  &kp SINGLE_QUOTE     &kp SEMICOLON          &kp SLASH    &kp K_POWER
+         &trans  &kp N0                          &trans                                      &trans                       &kp K_SLEEP      &trans
             >;
         };
 
