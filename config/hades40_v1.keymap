@@ -25,7 +25,7 @@
    &kp LSHFT         &kp Z   &kp X   &kp C   &kp V        &kp B   &kp N   &kp M  &kp COMMA  &kp DOT     &kp UP
  &lt 2 LCTRL  &kp LEFT_WIN                          &lt 1 SPACE                   &kp LEFT            &kp DOWN  &kp RIGHT
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_raise {
@@ -35,7 +35,7 @@
  &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans  &kp SINGLE_QUOTE     &kp SEMICOLON          &kp SLASH    &kp K_POWER
          &trans  &kp N0                          &trans                                      &trans                       &kp K_SLEEP      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_lower {
@@ -45,7 +45,7 @@
      &bootloader       &bt BT_CLR     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3           &trans           &trans           &trans   &trans   &trans
           &trans           &trans                                                              &trans                                         &bt BT_PRV            &trans  &bt BT_NXT
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
